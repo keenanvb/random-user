@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/keenanvb/random-user#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "styled-components": "^5.1.1"
   }
 }

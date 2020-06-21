@@ -1,10 +1,16 @@
 import React, { Fragment, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import styled from 'styled-components';
 import Loading from '../loading/Loading'
 import { getUserData } from '../../actions'
 import UserItem from './UserItem'
 import SearchBar from '../searchbar/SearchBar'
+
+const UserContainerStyled = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`
 
 const Users = ({ users: { users, filterUser, loading }, getUserData }) => {
 
@@ -19,7 +25,7 @@ const Users = ({ users: { users, filterUser, loading }, getUserData }) => {
         <Fragment>
             <SearchBar />
             {loading ? <Loading /> :
-                <div className="users-container">
+                <UserContainerStyled>
                     {Users.length > 0 ? (
                         filterUser.map((user, index) => {
                             return (
@@ -27,7 +33,7 @@ const Users = ({ users: { users, filterUser, loading }, getUserData }) => {
                             )
                         })
                     ) : <h2> No Users found...</h2>}
-                </div>
+                </UserContainerStyled>
             }
         </Fragment>
     )
