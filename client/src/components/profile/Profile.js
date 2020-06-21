@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const ProfileCard = styled.div`
     width: 400px;
-    margin: 75px auto 0;
+    margin: 60px auto 0;
     background-color: #fff;
     box-shadow: 0 3px 30px rgba(0, 0, 0, .14);
     color: #444;
@@ -16,6 +16,7 @@ const ProfileCard = styled.div`
 
     @media screen and ${device.mobile} {
         width: 92%;
+        margin: 40px auto 0;
     }
 `
 
@@ -88,7 +89,6 @@ const ProfileBody2 = styled.div`
 
 const SwitchBody = styled.div`
     margin: auto;
-    top: 4px;
     position: absolute;
     width: 300px;
     transition: .5s;
