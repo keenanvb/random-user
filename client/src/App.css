@@ -157,7 +157,7 @@ ul {
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 }
 
-.country-img, .login-img{
+.country-img {
   width: 100px;
   height: 100px;
   border-radius: 100px;
@@ -317,32 +317,55 @@ ul {
 
   .container {
     margin-top: 8rem;
-    height: 70vh;
+    height: 65vh;
   }
 
-    .card {
+  .card {
         width: 92%;
-    }
+  }
 
-    .card .card-body {
+  .card .card-body {
         padding: 10px 20px;
-    }
+  }
 
-    .card-container{
+  .card-container{
       width: 280px;
-    }
+  }
 
-    .card-body-switch{
+  .card-body-switch{
       width: 200px;
-    }
+  }
 
-    .alert {
+  .card {
+      margin: 40px auto 0;
+  }
+  
+  .card .card-body {
+      padding: 4px 20px;
+  }
+
+  .country-img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .card .card-header .profile-img  {
+      width: 70px;
+      height: 70px;
+  }
+
+  .card .card-header{
+      height: 28px;
+  }
+
+  .alert {
       right: 12px;   
       width: 200px;
-    }
-    .search-box{
+  }
+
+  .search-box{
       left: 16%;
-    }
+  }
 }
 
 
