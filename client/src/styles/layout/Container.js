@@ -8,10 +8,10 @@ export const Container = styled.div`
     padding: 0 2rem;
     margin-top: 6rem;
     margin-bottom: 3rem;
-    height: 80vh;
+    height: 78vh;
 
     @media screen and ${device.mobile} {    
         margin-top: 6rem;
-        height: 66vh;    
+        height: 68vh;    
     }
 `
