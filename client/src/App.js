@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import { GlobalStyle } from './styles/Golbalstyle'
-import { Container } from './styles/layout/Container'
 
 import Alert from './components/alert/Alert'
 import Navbar from './components/navbar/Navbar'
@@ -21,12 +20,10 @@ function App() {
             <GlobalStyle />
             <Navbar location={location} />
             <Alert />
-            <Container>
-              <Switch>
-                <Route path='/' exact component={Users} />
-                <Route path='/:name' exact component={Profile} />
-              </Switch>
-            </Container>
+            <Switch>
+              <Route path='/' exact component={Users} />
+              <Route path='/:name' exact component={Profile} />
+            </Switch>
           </>
         )} />
       </Router>

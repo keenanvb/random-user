@@ -12,7 +12,7 @@ export const AlertStyled = styled.div`
     padding: 0.8rem;
     margin: 1rem 0;
     opacity: 0.6;
-    ${({ alertType }) => alertType == 'success' ? `color:#fff; background: ${successColour}; ` :
+    ${({ alertType }) => alertType === 'success' ? `color:#fff; background: ${successColour}; ` :
         `background:${dangerColour};color:#fff;`}
     position: fixed;	
     width: 300px;	
