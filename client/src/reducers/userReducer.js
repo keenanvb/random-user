@@ -1,9 +1,10 @@
-import { GET_USER_DATA, FILTER_USER_DATA } from '../actions/types';
+import { GET_USER_DATA, FILTER_USER_DATA, SET_PAGE } from '../actions/types';
 
 const INITIAL_STATE = {
     users: null,
     searchText: '',
-    filterUser: null,
+    filterUser: [],
+    page: 1,
     loading: true,
     error: {}
 };
@@ -14,7 +15,9 @@ export default (state = INITIAL_STATE, action) => {
 
     switch (type) {
         case GET_USER_DATA:
-            return { ...state, users: payload, filterUser: payload, loading: false }
+            return { ...state, users: payload, filterUser: [...state.filterUser, ...payload], loading: false }
+        case SET_PAGE:
+            return { ...state, page: state.page + payload }
         case FILTER_USER_DATA:
             return {
                 ...state,

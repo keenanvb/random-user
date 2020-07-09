@@ -3,6 +3,7 @@ import moment from 'moment'
 import styled from 'styled-components';
 import { device } from '../../styles/devices'
 import { Button } from '../../styles/layout/Button'
+import { Container } from '../../styles/layout/Container'
 import Fade from 'react-reveal/Fade';
 
 const ProfileCard = styled.div`
@@ -141,7 +142,7 @@ const Profile = ({ location: { state: { user } } }) => {
 
 
     return (
-        <div>
+        <Container>
             <ProfileCard>
                 <ProfileHeader>
                     <ProfileImage src={user.picture.medium} alt="" />
@@ -197,7 +198,7 @@ const Profile = ({ location: { state: { user } } }) => {
                     </ProfileCard>
                     : null
             }
-        </div >
+        </Container >
     )
 }
 
